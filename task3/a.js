@@ -4,6 +4,9 @@ let num3=8;
 let large="";
 let startRange= 5;
 let endRange=8;
+let amount=-10;
+let userName="Nouf";
+let password="hg2754";
 
 /*large number*/
 if(num1>num2){
@@ -65,9 +68,35 @@ else{
 }
 console.log(`the sort numbers from large to small is ${large}`);
 
+/*positive number*/
+if(typeof amount==='number')
+{
+    if(amount<0)
+    {
+        console.log('Please enter a positive number');
+    }
+    else{
+        console.log(amount);
+    }
+}
+else{
+    console.log('please enter a number');
+}
+
+/*login successful */
+if((userName.length>6)&&(password.length>=8))
+{
+    console.log(`login successful`);
+}
+else
+{
+    console.log('login failed');
+}
+
+
 /*display numbers from 0 to 20 by for*/
 console.log('numbers from 0 to 20 is ')
-for(let i =0;i<20;i++)
+for(let i =0;i<=20;i++)
 {
     console.log(`${i} `);
 }
@@ -75,17 +104,17 @@ for(let i =0;i<20;i++)
 /*display numbers from 0 to 20 by while*/
 console.log('numbers from 0 to 20 is ')
 let x=0;
-while (x<20) {
+while (x<=20) {
     console.log(`${x} `);
     x++;
 }
 
 /*display all even number from 0 to 20 */
 console.log('all even number from 0 to 20 is ')
-for(let i =0;i<20;i++)
+for(let i =0;i<20;i+=2)
 {
     console.log(`${i} `);
-    i+=2;
+  
 }
 
 /*display numbers between two numbers  */
